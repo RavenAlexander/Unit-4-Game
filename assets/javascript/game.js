@@ -118,7 +118,7 @@ $("#yourScore").html(currentScore);
 //MAIN PROCESS
 //Starts the game the first time
 startGame();
-gamePlay();
+//gamePlay();
 $('#blue').click(function () {
     addValues(crystal.blue);
 });
