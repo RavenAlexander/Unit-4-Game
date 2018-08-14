@@ -1,0 +1,22 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p {
+    font-size: 18px;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+.container {
+    background-color: white;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}

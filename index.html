@@ -5,26 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="assets/css/reset.css">
+    <!--when I use this reset, my li bullets disappear. Have not figured out how to prevent that-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="assets/javascript/game.js"></script>
+    
+    
+
     <title>Play Crystals Collector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
 </head>
-<body>
-    <h1>Crystals Collector</h1>
+<body background="assets/images/dark-triangles.png">
+    <div class="container">
+  
+            <div class="row">
+              <div class="col-lg-12">
+               
+                <h1>Crystals Collector!</h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                    <p><strong>How to play:</strong>
+                           <ul> 
+                               <li>There are four crystals displayed on the page.</li>
+                                <li> You will be shown a randomly assigned number at the start of the game.</li>
+                                
+                               <li>When you click on a crystal, it will add a specific amount of points to your total score. 
+                                The value of the crystal is hidden until you click on it.
+                                Choose wisely! </li>
+                                
+                                
+                                <li> You win if your total score matches the assigned number.</li>
+                                <li> You lose if your score goes above the assigned number.</li>
+                    
+                                <li>The value of the crystals changes at the start of each game to keep you guessing!</li>
+                            </ul>
+                                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+               <span><img src="assets/images/blue.png" id="blue">
+               <img src="assets/images/green.png" id="green">
+               <img src="assets/images/pink.png" id="pink">
+               <img src="assets/images/yellow.png" id="yellow"></span>
+              </div>
+              <div class="col" id="targetScore">
+                Target Number:
+              </div>
+              <div class="col" id="yourScore">
+                    Your Score:
+                  </div>
+            </div>
+            <div class="row">
+                <div class="col" id="winCount">
+                    Wins:
+                </div>
+                <div class="col" id="lossCount">
+                        Losses:
+                    </div>
 
-    <p>How to play:
-        There are four crystals displayed on the page.
-            // You will be shown a randomly assigned number at the start of the game.
-            
-            // When you click on a crystal, it will add a specific amount of points to your total score. 
-            The value of the crystal is hidden until you click on it.
-            Choose wisely! 
-            
-            
-            // You win if your total score matches the assigned number.
-            // You lose if your score goes above the assigned number.
+            </div>
+          </div>
+    
 
-            The value of the crystals changes at the start of each game to keep you guessing!
-            </p>
+
+    </div>
+    <!--Link to jQuery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!--Link to Javascript-->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
 </body>
 </html>
